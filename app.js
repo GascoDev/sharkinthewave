@@ -3,6 +3,8 @@ const app=express();
 const homeRoutes=require("./routes/homerout");
 //Require de las rutas
 
+require("dotenv").config();
+
 //declaro constante y requiero path para manejar motor de ejs
 const path=require("path");
 
@@ -16,6 +18,6 @@ app.use("/",homeRoutes);
 
 console.log("ready");
 
-app.listen("7000",()=>{
-    console.log("svr listen and ready in the port 7000");
-})
+app.listen(process.env.PORT,()=>{
+    console.log("svr listen and ready in the port: " + process.env.PORT);
+}) 
