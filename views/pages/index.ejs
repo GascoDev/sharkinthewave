@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include("../partials/head")%>
+    <body>
+
+
+        <!--contador de cuenta regresiva responsive-->
+        <div class="resolucion"></div>
+
+        <%-include("../partials/count")%>
+
+            <!--Sitio para escritorio-->
+                <%-include("../partials/desktop")%>
+
+            <!--Sitio para tablets-->
+            <div class="tablet">
+                <%-include("../partials/tablet")%>
+            </div>
+
+            <!--sitio para dispositivos móviles-->
+                <%-include("../partials/mobile")%>
+        <!--cierre div resolucion-->
+        </div>
+
+
+            <!--Scripts de ion icons-->
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+            <!--script de bootstrap-->
+            <!--Scripts de bootstrap-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+
+            <!--separate-->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+                integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+                crossorigin="anonymous"></script>
+
+
+                <!--Función para traer la fecha universal y hacer el conteo regresivo-->
+                <script> function countdown() {
+                    const targetDate = new Date('2024-05-01T00:00:00').getTime();
+                  
+                    const interval = setInterval(() => {
+                      const now = new Date().getTime();
+                      const distance = targetDate - now;
+                  
+                      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  
+                      console.log(days);
+                      console.log(hours);
+                      console.log(minutes);
+                
+                
+                      document.getElementById('days').innerHTML = days + ' Días';
+                      document.getElementById('hours').innerHTML = hours + ' Horas';
+                      document.getElementById('minutes').innerHTML = minutes + ' Minutos';
+                  
+                      if (distance < 0) {
+                        clearInterval(interval);
+                        document.getElementById('days').innerHTML = 'Expired';
+                        document.getElementById('hours').innerHTML = '';
+                        document.getElementById('minutes').innerHTML = '';
+                      }
+                    }, 1000);
+                  }
+                  
+                  countdown();
+                  </script>
+
+
+                
+    </body>
+
+</html>
