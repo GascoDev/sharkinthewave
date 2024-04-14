@@ -1,7 +1,9 @@
 const express=require("express");
 const app=express();
-const homeRoutes=require("./routes/homerout");
 //Require de las rutas
+const homeRoutes=require("./routes/homerout");
+
+
 
 require("dotenv").config();
 
@@ -15,6 +17,8 @@ app.set("view engine",".ejs");
 app.use(express.static(path.join(__dirname,"public")));
 
 app.use("/",homeRoutes);
+app.use("/error404",homeRoutes)
+
 
 console.log("ready");
 

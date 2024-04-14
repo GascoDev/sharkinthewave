@@ -2,4 +2,8 @@ const principal=(req,res)=>{
     res.render("./pages/index");
 };
 
-module.exports=principal;
+const error404=(req,res)=>{
+    res.render("./pages/error404");
+}
+
+module.exports={principal, error404};

@@ -146,10 +146,14 @@ margin-bottom: 15px;
 .textcontador{
     background-color: red;
     font-family: "Righteous", sans-serif;
-    font-size:1.5rem;
+    font-size:18px;
     font-style: normal;
     text-align: center;
     color:white;
+}
+
+.tittleSegSeccionDesk{
+    margin-top: 25px;
 }
 
 .segSeccion {
@@ -166,6 +170,7 @@ margin-bottom: 15px;
     color: white;
     border: solid white 6px;
     text-align: center; /* Alinear todo al centro */
+    border-radius: 10px;
 }
 
 .divimg {
@@ -400,6 +405,7 @@ video {
     color:white;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
     
 }
 
@@ -412,6 +418,7 @@ video {
     margin-top:35px;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -456,8 +463,8 @@ body {
 
         .contenedorCel figure{
         position:relative;
-        height: 650px;
-        width: 350px;
+        height: 300px;
+        width: 200px;
         overflow: hidden;
         border-radius: 6px;
         box-shadow: 0px 50px 50px 
@@ -471,7 +478,7 @@ body {
         transition: all 300ms ease-out;
     }
     
-    .contenedorCel figure .capa{
+    .contenedorCel figure .capaCel{
         position: absolute;
         top:0;
         width: 100%;
@@ -483,13 +490,13 @@ body {
         text-align: center;
     }
     
-    .contenedorCel figure:hover >.capa{
+    .contenedorCel figure:hover >.capaCel{
         opacity: 1;
         visibility: visible;
     }
     
-    .contenedorCel figure:hover >.capa h3{
-    margin-top:70px;
+    .contenedorCel figure:hover >.capaCel h3{
+    margin-top:15px;
     margin-bottom: 15px;
     }
     
@@ -497,7 +504,7 @@ body {
         transform: scale(1.3);
     }
     
-    .contenedorCel figure .capa h3{
+    .contenedorCel figure .capaCel h3{
         color: #fff;
         font-weight: 400;
         margin-bottom: 120px;
@@ -505,7 +512,7 @@ body {
         margin-top: 30px;
     }
     
-    .contenedorCel figure .capa p{
+    .contenedorCel figure .capaCel p{
         color:white;
         font-size: 15px;
         line-height: 1.5;
@@ -524,69 +531,62 @@ body {
         gap: 25px;
     }
 
-    .btnLink{
-        opacity:0.8;
-        border:none;
-        outline:none;
-        padding:4vmin 10vmin;
-        border-radius: 10px;
-        font-size:2em;
-        color:black;
-        background:black;
-        box-shadow: 4px 10px black;
-        font-family: "Righteous", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        
-
-    }
-    
-    .btnLink:active{
-        background: rgb gray (6,230,55);
-        transform: translateY(10px);
-        box-shadow: 4px 7px gray ;
-    }
-
-    .btnLink2{
-        opacity: 0.7;
-        border:none;
-        outline:none;
-        padding:4vmin 10vmin;
-        border-radius: 10px;
-        font-size:2em;
-        color:black;
-        background: black;
-        box-shadow: 4px 10px black;
-        font-family: "Righteous", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-
-    }
-    
-    .btnLink2:active{
-        background: rgb gray (6,230,55);
-        transform: translateY(10px);
-        box-shadow: 4px 7px gray ;
-    }
-
-
 .textexplicacion{
     font-size: 20px;
 }
   
-  
-.divInfocontactoDesk{
+  .divInfocontactoDesk{
     margin-top:1.5%;
 }
 
 .botonesCel{
-    gap:20px;
+    gap:35px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 35px;
 }
- 
 
+.textCel{
+    font-size: 12px;
+}
 
+.textexplicacionCel{
+    font-size: 14px;
+}
 
+.h3capacel{
+    font-size: 15px;
+}
 
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+  
+  .shadow__btn {
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+  }
+  
+  .shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+  }
 
+  .linkestilo{
+    color:white;
+  }
+
+.tittlecontador{
+    font-size: 20px;
+}
