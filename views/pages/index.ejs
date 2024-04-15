@@ -44,10 +44,15 @@
 
                 <!--Función para traer la fecha universal y hacer el conteo regresivo-->
                 <script> function countdown() {
+                    //creo target el cual será el tiempo objetivo, como parametro de new Date(targetDate) lo obtengo con get.Time();
                     const targetDate = new Date('2024-05-01T00:00:00').getTime();
                   
+                    //uso setInterval para calcular fecha objetivo cada un segudo.
                     const interval = setInterval(() => {
+
+                    //creo constante ahora obteniendo horario con Date().getTime();
                       const now = new Date().getTime();
+                        //creo constante tiempo objetivo 
                       const distance = targetDate - now;
                   
                       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
