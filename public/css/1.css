@@ -150,6 +150,7 @@ margin-bottom: 15px;
     font-style: normal;
     text-align: center;
     color:white;
+    display:inline-block;
 }
 
 .tittleSegSeccionDesk{
@@ -213,21 +214,23 @@ margin-bottom: 15px;
 
 
 .video-container {
-    margin-top: 15px;
     margin-bottom:90px;
     position: relative;
     width: 65%;
     margin-left: 17%;
-    box-shadow: 0px 50px 50px 
-    rgba(0,0,0,5);
-    border-style:ridge;
+    box-shadow: 14px 7px 7px rgba(0,0,0,5);
+}
+
+.video-containermobile{
+    box-shadow: 14px 7px 7px rgba(0,0,0,5);
 }
 
 video {
     width: 100%;
     height: auto;
+    margin-bottom: auto;
+    box-shadow: 7px 77px 77px rgba(0,0,0,5)
 }
-
 
 .contfooter{
     display:flex;
@@ -342,7 +345,7 @@ video {
         bottom: 10px;
         animation:animateWave_02 3s linear infinite;
     }
-    
+        
     @keyframes animateWave{
     0%
     {
@@ -361,15 +364,9 @@ video {
         100%{
             background-position: 1000px;
         }
-        }
+    }
 
-        .video-containermobile{
-            border-style: ridge;
-            box-shadow: 0px 50px 50px 
-            rgba(0,0,0,5);
-            border-style:ridge;
-        }    
-
+     
 .divimgcel{
     display: flex;
     width: 100%;
@@ -551,7 +548,7 @@ body {
 }
 
 .textexplicacionCel{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .h3capacel{
