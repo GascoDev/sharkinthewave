@@ -127,7 +127,6 @@ margin-bottom: 15px;
     color:white;
     border-radius: 25px;
     border-color: black;
-    opacity:0.77;
 }
 
 .text{
@@ -418,14 +417,10 @@ video {
     
 }
 
-
-
-
 .h2cel{
     text-align: center;
     margin-left: 5px;
 }
-
 
 body {
     font-family: Arial, sans-serif;
@@ -444,10 +439,9 @@ body {
     background-color: red;
     padding: 10px;
     margin: 0 10px;
-    
   }
 
-  .contenedorCel{
+    .contenedorCel{
         margin-left: 7%;
         margin-bottom: 40px;
         gap:30px;
@@ -455,7 +449,6 @@ body {
         display:flex;
         justify-content: center;
         align-items: center;
-        
     }
 
         .contenedorCel figure{
@@ -609,4 +602,36 @@ body {
 
 .divbtn2{
     margin-bottom: 20px;
+}
+
+.segsecciondesk{
+    display:flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    gap:40px;
+}
+
+.contBtnDesk{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    border:5px solid;
+    border-radius: 10px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    gap:20px;
+    color:rgb(0,140,255);
+    margin:25px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+h3.titulobtnDesk{
+    font-size:2rem;
+}
+
+.divbtnDesk{
+    margin-bottom: 15px;
 }
